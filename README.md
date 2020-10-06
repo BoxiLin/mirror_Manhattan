@@ -11,3 +11,5 @@ png('my_mirrored_Manhattan.png', type='cairo', width=1500, height=1000)
 plot_mirrored_manhattan(chr=test_df$chr, bp=test_df$bp, pval1=test_df$pval1, pval2=test_df$pval2)
 dev.off()
 ```
+
+<img src="https://github.com/lzhangdc/mirror_Manhattan/blob/main/test1.png"/>
