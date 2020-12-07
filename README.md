@@ -2,7 +2,7 @@
 GWAS mirrored Manhattan plots to compare two association testing methods. 
 
 ## :heavy_plus_sign: Quick Start
-- [Step 1.] Download plot_mirrored_Manhattan.R(https://github.com/lzhangdc/mirror_Manhattan/blob/main/plot_mirrored_Manhattan.R) to the working directory
+- [Step 1.] Download [plot_mirrored_Manhattan.R](https://github.com/lzhangdc/mirror_Manhattan/blob/main/plot_mirrored_Manhattan.R) to the working directory
 - [Step 2.] User-input values: chromosome number, base pair values, p-values from testing method 1 and method 2
 ```R
 ### chr: the chromosome number of the tested SNP
