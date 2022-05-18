@@ -9,6 +9,8 @@
 ### col_even: color of the dots for even chromosomes
 
 plot_mirrored_manhattan <- function(chr, bp, pval1, pval2, name_test1='Test 1', name_test2='Test 2', col_odd='grey', col_even='skyblue'){
+  chr_order <- order(chr)
+  chr =chr[chr_order]; bp = bp[chr_order]; pval1 = pval1[chr_order];pval2 = pval2[chr_order];
   chr_num <- length(unique(chr))
   chr_length <- sapply(1:chr_num, function(x) max(bp[chr==x]))
   add_length <- cumsum(as.numeric(chr_length))-chr_length
