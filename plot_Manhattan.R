@@ -1,4 +1,6 @@
 plot_manhattan <- function(chr, bp, pval,col_odd='grey', col_even='skyblue'){
+  chr_order <- order(chr)
+  chr = chr[chr_order]; bp = bp[chr_order]; pval = pval[chr_order]
   chr_num <- length(unique(chr))
   chr_length <- sapply(1:chr_num, function(x) max(bp[chr==x]))
   add_length <- cumsum(as.numeric(chr_length))-chr_length
